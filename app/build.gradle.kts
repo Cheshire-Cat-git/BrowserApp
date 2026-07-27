@@ -5,13 +5,11 @@ plugins {
 
 android {
     namespace = "com.example.browserapp"
-    compileSdk {
-        version = release(36)
-    }
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.example.browserapp"
-        minSdk = 32
+        minSdk = 27
         targetSdk = 36
         versionCode = 1
         versionName = "1.0"
@@ -34,6 +32,9 @@ android {
     }
     kotlinOptions {
         jvmTarget = "11"
+    }
+    buildFeatures {
+        viewBinding = true
     }
 }
 
